@@ -3,14 +3,11 @@
 
 It's a simple Honkai: Star Rail RPC using OCR (it only works with EN lang text currently however you can edit the configs.json and add language if you want to.)
 
-Normal Rich Presence (you gonna change the fallback.json for your username/region):
+Rich Presence examples (you gonna change the fallback.json for your username/region):
 ![RPC1](RPC1.png)
-Open world
 ![RPC2](RPC2.png)
-Simulated Universe
 ![RPC4](RPC4.png)
 ![RPC3](RPC3.png)
-Fighting Bosses
 ![RPC5](RPC5.png)
 
 - All the image assets belongs to miHoYo, as they are taken/extracted from the game.
