@@ -1,4 +1,4 @@
-# Honkai-StarRail-Rich-Presence - will be Updated whenever new Worlds/Bosses gets added
+# Elysia-Rich-Presence - will be Updated whenever new Worlds/Bosses gets added
 
 
 It's a simple Honkai: Star Rail RPC using OCR (it only works with EN lang text currently however you can edit the configs.json and add language if you want to.)
