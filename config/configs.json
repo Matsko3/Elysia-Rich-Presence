@@ -386,6 +386,34 @@
       "small_image": "20006"
     },
     {
+      "word": "Everwinter City Museum\n Phone/Exit",
+      "details": "Trailblazing through Jarilo-VI",
+      "state": "In The Everwinter City Museum",
+      "large_image": "museumactivity",
+      "small_image": "20006"
+    },
+    {
+      "word": "Industrial Hall\n Phone/Exit",
+      "details": "Trailblazing through Jarilo-VI",
+      "state": "In The Everwinter City Museum - Industrial Hall",
+      "large_image": "museumactivity",
+      "small_image": "20006"
+    },
+    {
+      "word": "General Hall — Exterior\n Phone/Exit",
+      "details": "Trailblazing through Jarilo-VI",
+      "state": "In The Everwinter City Museum - General Hall — Exterior",
+      "large_image": "museumactivity",
+      "small_image": "20006"
+    },
+    {
+      "word": "History-Culture Hall\n Phone/Exit",
+      "details": "Trailblazing through Jarilo-VI",
+      "state": "In The Everwinter City Museum - History-Culture Hall",
+      "large_image": "museumactivity",
+      "small_image": "20006"
+    },
+    {
       "word": "Artisanship Commission\n Phone/Exit",
       "details": "Trailblazing through Xianzhou Luofu",
       "state": "In The Artisanship Commission",
@@ -722,6 +750,27 @@
       "small_image": "monster_8015010"
     },
     {
+      "word": "Switch Ability\n Antimatter Engine",
+      "details": "In a Battle",
+      "state": "Fighting Doomsday Beast",
+      "large_image": "honkai-star-rail",
+      "small_image": "monster_8015010"
+    },
+    {
+      "word": "Switch Ability\n Dawn's Left Hand",
+      "details": "In a Battle",
+      "state": "Fighting Doomsday Beast",
+      "large_image": "honkai-star-rail",
+      "small_image": "monster_8015010"
+    },
+    {
+      "word": "Switch Ability\n Dawn's Right Hand",
+      "details": "In a Battle",
+      "state": "Fighting Doomsday Beast",
+      "large_image": "honkai-star-rail",
+      "small_image": "monster_8015010"
+    },
+    {
       "word": "Switch Ability\n Ice Out of Space",
       "details": "In a Battle",
       "state": "Fighting Ice Out of Space",
@@ -799,6 +848,13 @@
       "small_image": "monster_1005010"
     },
     {
+      "word": "Switch Ability\n Cocolia (Complete)",
+      "details": "In a Battle",
+      "state": "Fighting Cocolia",
+      "large_image": "honkai-star-rail",
+      "small_image": "monster_1004010"
+    },
+    {
       "word": "Switch Ability\n Automaton Grizzly",
       "details": "In a Battle",
       "state": "Fighting Automaton Grizzly",
@@ -846,6 +902,62 @@
       "state": "Fighting Random Enemies",
       "large_image": "honkai-star-rail",
       "small_image": "icon_alert"
+    },
+    {
+      "word": "Arcade Challeng\n Volume One",
+      "details": "In Starhunt Game Menu",
+      "state": "Viewing Arcade Challenge",
+      "large_image": "starhuntactivity1",
+      "small_image": "btnantivirusreward"
+    },
+    {
+      "word": " Starhunt Game\nExamine Light",
+      "details": "In Starhunt Game Menu",
+      "state": "Viewing Story Mode",
+      "large_image": "starhuntactivity1",
+      "small_image": "btnantivirusreward"
+    },
+    {
+      "word": " Sealed Sector\n Difficulty",
+      "details": "In Starhunt Game Menu",
+      "state": "Viewing Sealed Sector Challenges",
+      "large_image": "starhuntactivity1",
+      "small_image": "btnantivirusreward"
+    },
+    {
+      "word": "Deep Web Gray\nMarket",
+      "details": "In Starhunt Game Menu",
+      "state": "Viewing Deep Web Gray Market",
+      "large_image": "starhuntactivity1",
+      "small_image": "iconbillboardshop"
+    },
+    {
+      "word": "Stellar Flare\n Ends in",
+      "details": "In Stellar Flare Menu",
+      "state": "Viewing Challenges",
+      "large_image": "stellarflareactivity",
+      "small_image": "none"
+    },
+    {
+      "word": "Planar Fissure\n Simulated Universe",
+      "details": "In Events Menu",
+      "state": "Checking Planar Fissure Event",
+      "large_image": "su_doublesactivity",
+      "small_image": "none"
+    },
+    {
+      "word": "Everwinter City Museum\n Phased Rewards",
+      "details": "In Events Menu",
+      "state": "Checking Everwinter City Museum Event",
+      "large_image": "museumactivity",
+      "small_image": "none"
+    },
+    {
+      "word": "Garden of Plenty\n Calyx (Crimson)",
+      "details": "In Events Menu",
+      "state": "Checking Garden of Plenty Event",
+      "large_image": "honkai-star-rail",
+      "small_image": "none"
     }
   ]
 }
