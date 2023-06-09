@@ -386,30 +386,9 @@
       "small_image": "20006"
     },
     {
-      "word": "Everwinter City Museum\n Phone/Exit",
+      "word": "History and Culture\n Phone/Exit",
       "details": "Trailblazing through Jarilo-VI",
-      "state": "In The Everwinter City Museum",
-      "large_image": "museumactivity",
-      "small_image": "20006"
-    },
-    {
-      "word": "Industrial Hall\n Phone/Exit",
-      "details": "Trailblazing through Jarilo-VI",
-      "state": "In The Everwinter City Museum - Industrial Hall",
-      "large_image": "museumactivity",
-      "small_image": "20006"
-    },
-    {
-      "word": "General Hall — Exterior\n Phone/Exit",
-      "details": "Trailblazing through Jarilo-VI",
-      "state": "In The Everwinter City Museum - General Hall — Exterior",
-      "large_image": "museumactivity",
-      "small_image": "20006"
-    },
-    {
-      "word": "History-Culture Hall\n Phone/Exit",
-      "details": "Trailblazing through Jarilo-VI",
-      "state": "In The Everwinter City Museum - History-Culture Hall",
+      "state": "In The History and Culture Museum",
       "large_image": "museumactivity",
       "small_image": "20006"
     },
@@ -946,9 +925,37 @@
       "small_image": "none"
     },
     {
-      "word": "Everwinter City Museum\n Phased Rewards",
+      "word": "Everwinter City Museum\nPhased Rewards",
       "details": "In Events Menu",
       "state": "Checking Everwinter City Museum Event",
+      "large_image": "museumactivity",
+      "small_image": "none"
+    },
+    {
+      "word": "Accumulated RevitaScore\n Museum Management",
+      "details": "In Everwinter City Museum Menu",
+      "state": "Checking Museum Management",
+      "large_image": "museumactivity",
+      "small_image": "none"
+    },
+    {
+      "word": "Accumulated RevitaScore\n General Hall",
+      "details": "In Everwinter City Museum Menu",
+      "state": "Managing the Museum",
+      "large_image": "museumactivity",
+      "small_image": "none"
+    },
+    {
+      "word": "Ledger of Curiosities\n Exhibition Area Upgrade",
+      "details": "In Everwinter City Museum Menu",
+      "state": "Upgrading the Museum Exhibition Area",
+      "large_image": "museumactivity",
+      "small_image": "none"
+    },
+    {
+      "word": "Ledger of Curiosities\nAppoint assistant",
+      "details": "In Everwinter City Museum Menu",
+      "state": "Managing the Museum Appoint assistants",
       "large_image": "museumactivity",
       "small_image": "none"
     },
