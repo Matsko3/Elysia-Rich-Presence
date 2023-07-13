@@ -1,6 +1,7 @@
 import time
 import pygetwindow as gw
 import json
+import configparser
 from pypresence import Presence
 from PIL import ImageGrab
 from ocr import extract_text_from_image
@@ -50,7 +51,7 @@ if len(process_lines) > 1:
     print("              ▓╫╩▀▓╣░░░░░░▒╢▓▒╙▓▓▓▓▓▓▓╣╬▓▓▓▀╙╨╫▓╜  ╥▓▓▓▓╣╢░▒▓▒░░▒░░▒▓╝╝╨▀┐")
     print("             ╟ ╙▓╖ ╟▒▒░░░▒▒▒▒▒ ╠╬╬╬╬╬╬            ║▓╬╬╬▓▓  ╟╣░░▒░ ▒╫▒ ╓╦╜╗")
     print("             ╬ ╟▓▓▓▓▓▒▒╖░░╙▒╣░  ░░░░░░             ░╓╥╝▒  ╓╣╖▒▒░░▒▒▓▓╝▓▒░╙╖")
-    print("            ╓▒╓▌▓╢▒╙╫▓▒▒▒▒▒╖▒╫╗  ▒░░░              ░░▒▒  ╓▒▒╣▒╥▒▒▒▓╜░╓▓▒  ▓")
+    print("            ╓▒╓▌▓╢▒╙╫▓▒▒▒▒▒╖▒╫╗  ▒░░░    ELYSIA    ░░▒▒  ╓▒▒╣▒╥▒▒▒▓╜░╓▓▒  ▓")
     print("            ╟▒▓  ╚▓▒░▒▓▓▒▒▒▒▒▒▒▓╖                      ╓▓▓▒▒▒▒▒╫▓░░░░▓ ╟ ░▓")
     print("             ▒╢    ╟╖▒░░░╙╨▓▓▒▒▒▒╨╨╜      ╥╖╖╖─    ╨▓▓▒▒▒▒▒▄▓▓╜░░░░╓▓  ╣ ▓")
     print("             ╟▒     ╙╣▒▒▒░▒▒╙▓▓▓▓▓▄╖             ╖  ╓▄▓▓▓▓▓▀░░░░▒░╬╜  ╥╬▓")
@@ -64,14 +65,23 @@ else:
     print("\x1b[38;5;91mUnable to retrieve process ID for StarRail.exe\x1b[38;5;91m")
     sys.exit()
 
-# Read the config JSON file
-with open('config/configs.json', 'r') as file:
-    rpc_data = json.load(file)
-    words_to_search = rpc_data['words']
+# Read the configs INI file
+config = configparser.ConfigParser()
+config.read('config/configs.ini')
 
 # Read the fallback JSON file
 with open('config/fallback.json', 'r') as file:
     refresh_data = json.load(file)
+
+words_to_search = []
+for section in config.sections():
+    word_data = {}
+    word_data['word'] = config.get(section, 'word').replace('\\n', '\n')
+    word_data['details'] = config.get(section, 'details')
+    word_data['state'] = config.get(section, 'state')
+    word_data['large_image'] = config.get(section, 'large_image')
+    word_data['small_image'] = config.get(section, 'small_image')
+    words_to_search.append(word_data)
 
 history = []
 
@@ -119,6 +129,13 @@ while True:
                         small_image = word_data['small_image']
                         break  # Exit the loop once a match is found
 
+                # Used whenever assets are max
+                if large_image.startswith('https://'):
+                    large_image = large_image  # Use the provided URL for large image
+
+                if small_image.startswith('https://'):
+                    small_image = small_image  # Use the provided URL for small image
+
                 # Updating the Rich Presence activity
                 RPC.update(
                     details=details,
@@ -129,14 +146,9 @@ while True:
                 )
 
                 # Printing Rich Presence data
-                print("\x1b[38;5;91mRich Presence Updated:\x1b[38;5;91m")
-                print("Details:", details)
-                print("State:", state)
-                print("Large Image:", large_image)
-                print("Small Image:", small_image)
-                print("-----------------------\x1b[38;5;91m")
+                print("\x1b[38;5;91mRich Presence Updated:\x1b[38;5;91m", "Details:", details, "State:", state, "Large Image:", large_image, "Small Image:", small_image)
                 # Sleep for some time before capturing the next text
-                time.sleep(4)
+                time.sleep(3)
 
             except Exception as e:
                 handle_exception()
