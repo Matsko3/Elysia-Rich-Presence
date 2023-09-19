@@ -19,6 +19,7 @@ Rich Presence examples (you gonna change the fallback.json for your username/reg
 
 You will have to download first off Tesseract for it to scan for text.
 - [Download Tesseract](https://digi.bib.uni-mannheim.de/tesseract/?C=M;O=A) == [5.0.1](https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-v5.0.1.20220118.exe)
+- if an issue occurs while openning the exe from releases try installing everything from requirements.txt via **pip install -r requirements.txt**
 
 # Other information
 Main idea was from [Zanzancomms's Genshin-Impact-Rich-Presence](https://github.com/Zanzancomms/Genshin-Impact-Rich-Presence) script, check their amazing work!
